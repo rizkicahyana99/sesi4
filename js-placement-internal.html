@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Placement Internal</title>
+
+    <!-- 
+        javascript internal bisa dibuat di dalam elemen head / body     ==> menggunakan tag script
+    -->
+
+    <!-- javascript di dalam head -->
+    <script>
+        // console.log      ==> menulis output / tulisan ke dalam console browser   ==> bisa diakses melalui dev tools --> console
+        console.log("Hi, ini kode JavaScript!");
+
+        document.writeln("Ini ditulis lebih dulu..");
+    </script>
+
+</head>
+<body>
+    
+    <!-- javascript di dalam body -->
+    <script>
+
+        document.write("<h1>Bisa tambah tag juga nih!</h1>");
+
+        document.write("Saya mulai belajar JavaScript");
+
+        // contoh menulis elemen h2 dilengkapi dengan css inline
+        document.write("<h2 style='color: red; background: black;'>Ini elemen h2</h2>");
+
+        console.log('Ini dari dalam body..');
+
+    </script>
+
+
+</body>
+</html>

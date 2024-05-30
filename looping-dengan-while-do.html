@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping dengan While-Do</title>
+</head>
+<body>
+    <h1>Looping dengan While-Do</h1>
+
+    <div id="hasil"></div>
+
+    <button onclick="cetak10kaliDenganWhileDo('Saya tidak akan terlambat lagi!');">Cetak 10x dengan While Do</button>
+
+    <script>
+        function cetak10kaliDenganWhileDo (kalimat) {
+            let temp = "";
+            let i = 0;
+            while (i < 10) {
+                temp += kalimat + "<br/>";
+                i++
+            }
+            document.getElementById('hasil').innerHTML = temp;
+        }
+    </script>
+
+</body>
+</html>

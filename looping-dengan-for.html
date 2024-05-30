@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping dengan For</title>
+</head>
+<body>
+    <h1>Looping dengan For</h1>
+
+    <div id="hasil"></div>
+
+    <button onclick="cetak10kaliDenganFor('Saya tidak akan terlambat lagi!');">Cetak 10x dengan For</button>
+
+    <script>
+        function cetak10kaliDenganFor (kalimat) {
+            let temp = "";
+            for (let i = 0; i < 10; i++) {
+                temp += kalimat + "<br/>";
+            }
+            document.getElementById('hasil').innerHTML = temp;
+        }
+    </script>
+
+</body>
+</html>

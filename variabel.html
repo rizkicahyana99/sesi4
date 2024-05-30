@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel</title>
+</head>
+<body>
+    <h1>Variabel</h1>
+
+    <ul>
+        <li>Variabel    ==> wadah / tempat / media untuk menyimpan data sementara</li>
+        <li>Variabel harus dibuat / dideklarasikan terlebih dahulu sebelum digunakan</li>
+        <li>Keyword / kata kunci deklarasi variabel: 
+            <ul>
+                <li>Var ==> untuk nilai yang berubah-ubah ==> old ways</li>
+                <li>Let ==> untuk nilai yang berubah-ubah</li>
+                <li>Const   ==> konstanta ==> untuk nilai yang tetap / fix / tidak bisa berubah</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr/>
+
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+    <div id="phi"></div>
+
+    <script>
+        /* 
+        Cara deklarasi variabel 
+        Format: 
+            kata_kunci_deklarasi_variabel nama_variabel;
+            Contoh:
+                - var namavariabel1;
+                - let namavariabel2;
+                - const namavariabel3;
+        
+        Cara deklarasi dan inisialisasi / assignment / pemberian nilai ke dalam variabel
+        Contoh: 
+            - const phi = 3.14;
+            - let nama = 'David Beckham';
+        */
+
+        // deklarasi variabel dan assignment nilai ke variabel
+        var nama_agenda = "Workshop 4 Days";
+        let lokasi_agenda = 'Online';
+        const nilai_phi = 3.14;
+        
+        // =============================================
+        // testing redeclare / deklarasi kembali 
+        var nama_agenda = "Sesi ke-5 Program Prakerja x Hacktiv8";  // var dapat di-redeclare
+
+        // let lokasi_agenda = "Tatap Muka"; // let tidak dapat re-declare
+
+        // const nilai_phi = 3.16; // const tidak dapat re-declare
+        // =============================================
+        
+        // =============================================
+        
+        // testing re-assign / pemberian nilai baru ke variabel
+        nama_agenda = "Webinar Full Stack Web Developer"; // var dapat di-reassign
+        lokasi_agenda = "Jakarta"; // let dapat di-reassign
+        nilai_phi = 3.25; // const tidak dapat di-reassign
+
+
+        // =============================================
+
+
+
+        // menulis output ke dalam elemen html berdasarkan atribut / nama id
+        document.getElementById('nama').innerHTML = nama_agenda;
+        document.getElementById('lokasi').innerHTML = lokasi_agenda;
+        document.getElementById('phi').innerHTML = nilai_phi;
+
+        /*
+            aturan penamaan variabel: 
+            - tidak boleh dimulai dengan angka;
+            - tidak boleh dimulai dengan simbol tertentu (kecuali simbol _, $, );
+            - nama variabel tidak boleh mengandung karakter spasi;
+            - jika nama variabel > 1 kata, maka gunakan tanda hubung undersore atau bedakan kapitalisasinya
+            - Terdapat 2 gaya penulisan nama variabel / function / dst: 
+            - snake_case 
+            Contoh: 
+                let nama_lengkap;
+                let nama_skill_ultimate;
+            - camelCase
+            Contoh: 
+                let namaLengkap; 
+                let namaSkillUltimate;
+            Misal: 
+
+        */
+
+
+    </script>
+
+</body>
+</html>

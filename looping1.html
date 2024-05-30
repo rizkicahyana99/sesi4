@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <button onclick="cetakTulisan();">Cetak</button>
+    <div id="hasil"></div>
+
+    <script>
+        let text = prompt('Masukkan tulisan: ', 'testing');
+        let jumlah = prompt('Masukkan jumlah: ');
+
+        function cetakTulisan(){
+        const hasil = document.getElementById('hasil');
+        let tampung = '<ol>';
+
+        // menggunakan looping for
+        for(let i = 0; i < jumlah; i++){
+            tampung = tampung + '<li>' + text + '</li>';
+        }
+        tampung = tampung + '</ol>';
+
+        hasil.innerHTML = tampung;
+        }
+    </script>
+
+</body>
+</html>

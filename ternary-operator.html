@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <h1>Ternary Operator</h1>
+
+    <label for="warna_lampu">Warna Lampu: </label>
+    <!-- menggunakan event onchange -->
+    <!-- onchange dieksekusi ketika nilai dari elemennya berubah -->
+    <!-- this.value ==> mengirimkan value  -->
+    <select name="warna_lampu" id="warna_lampu" onchange="generateArti(this.value);">
+        <option value="" disabled selected>- Pilih Warna -</option>
+        <option value="merah">Merah</option>
+        <option value="kuning">Kuning</option>
+        <option value="hijau">Hijau</option>
+    </select>
+
+    <hr/>
+
+    <h1 id="hasil"></h1>
+
+    <script>
+        // function generateArti (warna) {
+
+        // }
+
+        // membuat arrow function 
+        const generateArti = (warna) => {
+            // if (warna === "merah") {
+            //     arti = "Berhenti";
+            // } 
+            // else if (warna === "kuning") {
+            //     arti = "Hati - Hati";
+            // } 
+            // else {
+            //     arti = "Jalan";
+            // }
+
+            /*
+                Ternary Operator
+                Format: 
+                    let namavariabel = (kondisi1) ? 'nilai_ketika_true' : 'nilai_ketika_false';
+            */
+
+            let arti = (warna === "merah") ? "Berhenti" : (warna === "kuning") ? "Hati - Hati" : "Jalan";
+            
+            document.getElementById('hasil').innerHTML = arti;
+
+        }
+
+        
+    </script>
+
+</body>
+</html>

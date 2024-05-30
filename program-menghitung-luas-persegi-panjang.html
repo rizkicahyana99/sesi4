@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Menghitung Luas Persegi Panjang</title>
+</head>
+<body>
+    <h1>Program Menghitung Luas Persegi Panjang</h1>
+
+    <label for="panjang">Panjang: </label>
+    <input type="number" id="panjang" /> <br/>
+    <label for="lebar">Lebar: </label>
+    <input type="number" id="lebar" /> <br/><br/>
+
+    <!-- menambahkan event onclick -->
+    <!-- mengeksekusi fungsi hitungLuas ketika tombol diklik / ditekan -->
+    <button onclick="hitungLuas();">Hitung Luas</button> <br/><br/> 
+
+    <h1 id="hasil"></h1>
+
+    <script>
+
+        function hitungLuas () {
+            let panjang = document.getElementById('panjang').value; // mengambil nilai dari input dengan id = 'panjang'
+            let lebar = document.getElementById('lebar').value; // mengambil nilai dari input dengan id = 'lebar'
+
+            let luas = panjang * lebar; 
+
+            document.getElementById('hasil').innerHTML = luas;
+
+        }
+
+    </script>
+
+</body>
+</html>

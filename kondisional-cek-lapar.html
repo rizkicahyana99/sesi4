@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kondisional</title>
+</head>
+<body>
+    <label for="kondisi">Kondisi: </label>
+    <input type="text" id="kondisi" /> <br/><br/>
+    <button onclick="cekLapar();">Cek Lapar</button> <br/><br/>
+
+    <h1 id="hasil"></h1>
+
+    <script>
+        function cekLapar () {
+            let kondisi = document.getElementById('kondisi').value; 
+            let hasil = '';
+
+            if (kondisi === 'lapar') {
+                // waktu makan 
+                hasil = 'waktu makan..';
+            } 
+            else {
+                // bukan waktu makan 
+                hasil = 'bukan waktu makan..';
+            }
+
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+    </script>
+
+</body>
+</html>

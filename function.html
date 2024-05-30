@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function</h1>
+
+    <script>
+        /* 
+            Cara membuat / deklarasi function
+            Format: 
+                1. prosedur / void  ==> tanpa keyword return
+                function namafungsi (parameter_jika_ada) {
+                    // badan fungsi
+                }
+                
+                2. function     ==> dengan keyword return
+                function namafungsi (parameter_jika_ada) {
+                    // badan fungsi
+                    
+                    return ...
+                }
+            
+            Agar dapat berjalan, function harus dipanggil / di-call terlebih dahulu
+
+        */
+
+        // fungsi tanpa parameter
+        function sayHello () {
+            alert('Haloo... ');
+        }
+
+        // fungsi dengan parameter nama
+        function sayHelloWithName (nama) {
+            alert('Haloo... ' + nama);
+        }
+
+        /* Cara memanggil function
+            Format: 
+                namafungsi(parameter_jika_ada);
+         */
+
+        // memanggil function sayHello
+        sayHello();
+
+        sayHelloWithName('Ahmad');
+        sayHelloWithName('Dian');
+        sayHelloWithName('Zahra');
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert('Saya memanggil JavaScript melalui alert');

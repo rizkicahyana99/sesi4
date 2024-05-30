@@ -1,0 +1,67 @@
+Jenis Conditional: 
+1. If .. Else 
+    - if 
+    Format: 
+        if (kondisi) {
+            ...
+        }
+
+    - if.. else..
+    Format: 
+        if (kondisi) {
+            ...
+        } 
+        else {
+
+        }
+    - if.. else if.. else 
+    Format: 
+        if (kondisi) {
+            ...
+        } 
+        else if (kondisi2) {
+            ...
+        }
+        else {
+            ...
+        }
+
+    - if.. else if.. else if.. .. else 
+    Format: 
+        if (kondisi) {
+            ...
+        } 
+        else if (kondisi2) {
+            ...
+        }
+        else if (kondisi3) {
+            ...
+        }
+        else {
+            ...
+        }
+2. Switch .. Case ..
+3. Ternary Operator 
+
+Studi Kasus program-kelulusan-mahasiswa.js
+
+..
+if (nilai >= 60) {
+    status = 'Lulus';
+}
+else if (nilai >= 50 && nilai < 60) {
+
+}
+else {
+    status = 'Tidak Lulus';
+}
+..
+
+nilai = 50 
+
+// apakah nilai >= 60 ?     
+    ==> apakah 50 >= 60 ? TIDAK / FALSE
+
+// karena tidak memenuhi kondisi if, maka sudah pasti mengeksekusi yang bagian ELSE
+status = 'Tidak Lulus' 
+

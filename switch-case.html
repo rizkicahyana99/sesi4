@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <h1>Switch - Case</h1>
+
+    <label for="warna_lampu">Warna Lampu: </label>
+    <!-- menggunakan event onchange -->
+    <!-- onchange dieksekusi ketika nilai dari elemennya berubah -->
+    <!-- this.value ==> mengirimkan value  -->
+    <select name="warna_lampu" id="warna_lampu" onchange="generateArti(this.value);">
+        <option value="" disabled selected>- Pilih Warna -</option>
+        <option value="merah">Merah</option>
+        <option value="kuning">Kuning</option>
+        <option value="hijau">Hijau</option>
+    </select>
+
+    <hr/>
+
+    <h1 id="hasil"></h1>
+
+    <script>
+        // function generateArti (warna) {
+
+        // }
+
+        // membuat arrow function 
+        const generateArti = (warna) => {
+            let arti = "";
+            // if (warna === "merah") {
+            //     arti = "Berhenti";
+            // } 
+            // else if (warna === "kuning") {
+            //     arti = "Hati - Hati";
+            // } 
+            // else {
+            //     arti = "Jalan";
+            // }
+
+            switch (warna) {
+                case "merah": 
+                    arti = "Berhenti";
+                    break; 
+                case "kuning": 
+                    arti = "Hati - Hati";
+                    break; 
+                default: 
+                    arti = "Jalan";
+                    break;
+            }
+
+            document.getElementById('hasil').innerHTML = arti;
+
+        }
+
+        
+    </script>
+
+</body>
+</html>

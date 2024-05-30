@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Event</h1>
+
+    <button onclick="salam('Indah');">Salam</button> <br/><br/>
+
+    <button onclick="changeBackgroundColor();">Ubah Warna Background</button>
+
+
+
+    <script>
+        function salam (nama) {
+            document.write("Selamat datang, " + nama + "!<br/>");
+        } 
+
+        function changeBackgroundColor () {
+            let color = ["red", "blue", "yellow", "green", "blue"];
+            let index = Math.floor(Math.random() * color.length);
+            console.log(index);
+            console.log(color[index]);
+            document.body.style.backgroundColor = color[index];
+        }
+
+
+
+    </script>
+
+</body>
+</html>
